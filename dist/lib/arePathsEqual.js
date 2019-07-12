@@ -17,7 +17,7 @@
     value: true
   });
 
-  var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+  var _mytypeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
     return typeof obj;
   } : function (obj) {
     return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
@@ -58,6 +58,6 @@
    * @returns {boolean} whether or not it's valid
    */
   var isValidLatLng = function isValidLatLng(elem) {
-    return elem !== null && (typeof elem === 'undefined' ? 'undefined' : _typeof(elem)) === 'object' && elem.hasOwnProperty('lat') && elem.hasOwnProperty('lng');
+    return elem !== null && (typeof elem === 'undefined' ? 'undefined' : _mytypeof(elem)) === 'object' && elem.hasOwnProperty('lat') && elem.hasOwnProperty('lng');
   };
 });
